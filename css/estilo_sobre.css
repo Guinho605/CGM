@@ -1,0 +1,556 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 130%;
+  overflow-x: hidden; /* Impede a rolagem horizontal */
+}
+.header-content {
+  overflow: hidden; /* Limpa o float */
+}
+
+.logo {
+  float: left; /* Faz a logo flutuar para a esquerda */
+  width: 150px; /* Defina o tamanho que deseja */
+  height: 100%; /* Mantém a proporção da imagem */
+  margin-left: -3px;
+  overflow: hidden;
+}
+
+nav {
+  display: flex;
+  margin-left: 970px; /* Ajuste a margem conforme necessário */
+  z-index: 999; /* Define uma posição de sobreposição para os links da navegação */
+  padding: 10px;
+  overflow: hidden;
+}
+
+nav a {
+  color: #000000; /* Cor do texto dos links */
+  text-decoration: none; /* Remove sublinhado padrão dos links */
+  font-size: 24px;
+  padding: 10px 20px; /* Ajuste o padding conforme necessário */
+  margin-top: 10px; /* Ajuste a margem conforme necessário */
+  background-color: #ffffff; /* Cor de fundo padrão */
+  transition: background-color 0.000001s;
+}
+
+nav a:hover {
+  background-color: #ff0000; /* Cor de fundo ao passar o mouse */
+  border-radius: 20px;
+}
+
+.p {
+  font-size: 38px; /* Tamanho da fonte */
+  font-weight: bold; /* Peso da fonte */
+  color: #fff; /* Cor do texto */
+  background-color: #14147e; /* Fundo azul */
+  width: 100%; /* Ocupa a largura inteira da tela */
+  text-align: start; /* Alinha o texto à esquerda */
+  padding: 30px 30px; /* Espaçamento interno para dar mais altura */
+  font-family: "Arial", sans-serif;
+  overflow-y: hidden; /* Permite a rolagem vertical */
+  margin: 0; /* Remove margens */
+}
+
+.texto {
+  /* Estilos para a div texto */
+  clear: both; /* Limpa elementos flutuantes */
+  margin: 40px auto; /* Margem superior */
+  padding: 50px; /* Preenchimento interno da div */
+  background-color: #f0f0f0; /* Cor de fundo da div */
+  border: 1px solid #ccc; /* Borda ao redor da div */
+  width: 50%; /* Largura da div */
+  height: 100%;
+  box-sizing: border-box; /* Inclui preenchimento e borda no cálculo da largura */
+  font-family: "Arial", sans-serif;
+  overflow-y: hidden; /* Permite a rolagem vertical */
+}
+
+.imagem-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+  height: 30%;
+  overflow-y: hidden; /* Permite a rolagem vertical */
+}
+
+.imagem-container img {
+  width: 25%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.texto h2 {
+  font-family: "Arial", sans-serif;
+  text-align: start;
+  color: #3f72ff;
+  overflow: hidden;
+}
+.sobre-texto {
+  /* Estilos para o parágrafo dentro da div */
+  color: #333; /* Cor do texto */
+  font-size: 18px; /* Tamanho da fonte */
+  line-height: 1.6; /* Altura da linha */
+  font-size: 18px; /* Define o tamanho da fonte */
+  line-height: 1.6; /* Define a altura da linha para melhor legibilidade */
+  color: #333; /* Define a cor do texto */
+  margin-bottom: 20px; /* Adiciona um espaço na parte inferior */
+  overflow-y: hidden; /* Permite a rolagem vertical */
+}
+
+.sobre-texto strong {
+  font-weight: bold; /* Define a fonte em negrito para elementos strong dentro do texto */
+}
+
+.sobre-texto em {
+  font-style: italic; /* Define a fonte em itálico para elementos em dentro do texto */
+}
+
+.quadrado-container {
+  display: flex;
+  width: 100%;
+  height: 36%;
+  overflow: hidden;
+  overflow-y: hidden; /* Permite a rolagem vertical */
+}
+
+.quadrado {
+  background-color: #383838; /* Cor de fundo dos quadrados */
+  padding: 30px;
+  width: 33.33%; /* Largura de cada quadrado */
+  box-sizing: border-box; /* Inclui preenchimento e borda no cálculo da largura */
+  text-align: center;
+  overflow: hidden;
+}
+.quadrado h3 {
+  font-size: 38px;
+  text-align: start;
+  font-family: "Arial", sans-serif;
+  color: white;
+}
+.quadrado p {
+  font-size: 28px;
+  text-align: start;
+  font-family: "Arial", sans-serif;
+  color: white;
+}
+.quadrado img {
+  height: 30%;
+  margin-left: 280px;
+  opacity: 30%;
+  margin-bottom: 0px;
+}
+.quadrado2 {
+  background-color: #222222; /* Cor de fundo dos quadrados */
+  padding: 30px;
+  width: 33.33%; /* Largura de cada quadrado */
+  box-sizing: border-box; /* Inclui preenchimento e borda no cálculo da largura */
+  text-align: center;
+  overflow: hidden;
+}
+
+.quadrado2 h3 {
+  font-size: 38px;
+  text-align: start;
+  font-family: "Arial", sans-serif;
+  color: white;
+}
+.quadrado2 p {
+  font-size: 28px;
+  text-align: start;
+  font-family: "Arial", sans-serif;
+  color: white;
+  margin-bottom: -70px;
+}
+.quadrado2 img {
+  height: 30%;
+  width: 75%;
+  margin-left: 200px;
+  opacity: 10%;
+}
+.quadrado3 {
+  background-color: #919191; /* Cor de fundo dos quadrados */
+  padding: 30px;
+  width: 33.33%; /* Largura de cada quadrado */
+  box-sizing: border-box; /* Inclui preenchimento e borda no cálculo da largura */
+  text-align: center;
+  overflow: hidden;
+}
+
+.quadrado3 h3 {
+  font-size: 38px;
+  text-align: start;
+  font-family: "Arial", sans-serif;
+  color: white;
+}
+.quadrado3 ul {
+  list-style-type: disc; /* Estilo do marcador da lista (pode ser disc, circle, square, etc.) */
+  text-align: start;
+  margin-right: 200px;
+  font-family: "Arial", sans-serif;
+  color: white;
+}
+
+.quadrado3 ul li {
+  font-size: 28px; /* Tamanho da fonte dos itens da lista */
+  margin-bottom: 5px; /* Espaço abaixo de cada item da lista */
+}
+.quadrado3 img {
+  height: 35%;
+  margin-left: 300px;
+  opacity: 30%;
+  margin-bottom: 0px;
+}
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 40px 10px;
+  height: 15%;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+  overflow-y: hidden; /* Permite a rolagem vertical */
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 200px;
+  margin: 10px;
+}
+
+.footer-column h3 {
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+  color: #007bff;
+}
+
+.footer-column p {
+  margin: 0 0 10px;
+}
+
+.social-icons {
+  display: flex;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-icons img {
+  width: 32px;
+  height: 32px;
+  transition: transform 0.3s;
+}
+
+.social-icons img:hover {
+  transform: scale(1.1);
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  border-top: 1px solid #444;
+  padding-top: 10px;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+footer {
+  background-color: #f0f0f0;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.contato {
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.contato h2 {
+  font-size: 24px;
+  color: #333;
+}
+
+.contato ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.contato li {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.titd {
+  text-align: center;
+  margin-bottom: 20px;
+}
+object {
+  display: none;
+}
+/* Estilos gerais para dispositivos grandes (desktops e notebooks) */
+@media (min-width: 1201px) {
+  body, html {
+    margin: 0;
+    padding: 0;
+    min-height: 230vh; /* Ocupa 100% da altura da viewport */
+    display: flex;
+    flex-direction: column; /* Força o conteúdo a ocupar a altura disponível */
+    overflow-x: hidden;
+  }
+
+  /* Centraliza o header e ajusta o espaçamento */
+  .header-content {
+    width: 80%;
+    margin: 0 auto; /* Centraliza o cabeçalho */
+  }
+
+  .logo {
+    width: 150px; /* Tamanho da logo */
+    margin-right: 500px;
+    margin-left: 0px;
+  }
+
+  nav {
+    margin-left: 500px;
+    margin-right: 20px;
+  }
+
+  .imagem-container img {
+    width: 25%;
+  }
+
+  .texto {
+    width: 50%;
+    margin: 0 auto; /* Centraliza o texto */
+  }
+
+  /* Mantendo os quadrados lado a lado */
+  .quadrado, .quadrado2, .quadrado3 {
+    width: 33.33%;
+  }
+  .quadrado2 img {
+      margin-top:100px;
+  }
+  .quadrado3 img {
+      margin-top: -30px;
+  }
+  /* Ajuste do footer para evitar espaço extra */
+  .footer {
+    height: auto;
+    padding: 20px 0;
+    margin-top: auto; /* Garante que o footer fique no final da página */
+  }
+}
+
+
+/* Estilos para tablets em modo paisagem (ex.: Galaxy Tab A9+ com 2560x1600 pixels) */
+@media (max-width: 1200px) and (min-width: 768px) {
+    body, html {
+        height:120%;
+        overflow-x: hidden; /* Remove rolagem horizontal */
+    }
+  .header-content {
+    width: 80%;
+    margin: 0 auto; /* Centraliza o cabeçalho */
+  }
+
+  .logo {
+    width: 120px; /* Tamanho da logo em tablets */
+  }
+
+  nav {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
+  .imagem-container {
+    flex-direction: row; /* Imagens lado a lado */
+    align-items: flex-start;
+  }
+
+  .imagem-container img {
+    width: 45%; /* Ajusta a largura das imagens */
+    height: 100%; /* Ajusta a altura das imagens */
+    margin-bottom: 0px;
+  }
+
+  .texto {
+    width: 60%;
+    height: 105%;
+    margin-top:0px;
+    margin-bottom: 0px;
+    margin-top: -10px; /* Puxa o texto 10px para cima */
+  }
+
+  .quadrado, .quadrado2, .quadrado3 {
+  width: 100%; /* Ocupa toda a largura */
+  min-height: 320px; /* Define uma altura mínima para garantir que não sejam muito pequenos */
+  margin-top:0px;
+  padding: 30px;
+  box-sizing: border-box;
+  overflow: hidden; /* Garante que o conteúdo não ultrapasse */
+}
+    .quadrado2 img{
+        margin-left: 250px;
+    }
+
+   .quadrado3 {
+    padding-left: 50px; /* Ajusta o preenchimento para mover o conteúdo para a esquerda */
+  }
+  .quadrado3 ul {
+    margin-left: -50px; /* Move o texto mais para a esquerda */
+  }
+  .footer {
+   margin-top: auto;
+  padding: 20px 0;
+  position: relative;
+  height: 20%;
+}
+
+}
+
+/* Estilos para tablets em modo retrato e telas menores */
+@media (max-width: 767px) {
+  .header-content {
+    width: 90%;
+    margin: 0 auto; /* Centraliza o cabeçalho */
+  }
+
+  .logo {
+    width: 100px; /* Tamanho da logo em dispositivos menores */
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav a {
+    font-size: 18px;
+  }
+
+  .imagem-container {
+    flex-direction: column;
+    height: auto; /* Permite que a altura se ajuste */
+  }
+
+  .imagem-container img {
+    width: 100%; /* Imagens ocupam toda a largura disponível */
+    height: auto; /* Ajusta a altura das imagens */
+  }
+
+  .texto {
+    width: 90%;
+    padding: 10px; /* Ajusta o padding */
+  }
+
+  .quadrado, .quadrado2, .quadrado3 {
+    width: 100%; /* Faz os quadrados ocuparem a largura total */
+  }
+}
+
+/* Para celulares com largura de até 480px */
+@media (max-width: 480px) {
+  .header-content {
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  .logo {
+    width: 80px; /* Reduz o tamanho da logo */
+    height: auto;
+    margin-left: 10px;
+  }
+
+  nav {
+    display: flex; /* Usa Flexbox para layout */
+    flex-direction: row; /* Alinha itens na horizontal */
+    justify-content: space-around; /* Distribui os itens com espaço ao redor */
+    align-items: center; /* Alinha os itens verticalmente no centro */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margens */
+  }
+
+  nav a {
+    display: inline-block; /* Garante que os links sejam exibidos em linha */
+    font-size: 14px; /* Ajusta o tamanho da fonte */
+    padding: 6px 10px; /* Ajusta o padding dos links */
+    text-align: center;
+    white-space: nowrap; /* Impede que o texto quebre para outra linha */
+  }
+
+  nav a:hover {
+    background-color: #ff0000; /* Cor de fundo ao passar o mouse */
+    border-radius: 8px;
+  }
+
+  .p {
+    font-size: 24px;
+    padding: 15px;
+  }
+
+  .texto {
+    width: 90%;
+    padding: 10px;
+  }
+
+  .imagem-container img {
+    width: 40%;
+    display: none;
+  }
+  
+   .quadrado-container {
+    display: flex;
+    flex-direction: column; /* Organiza os quadrados em coluna */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    gap: 20px; /* Espaço entre os quadrados */
+    height: 140%;
+  }
+
+.quadrado, .quadrado2, .quadrado3 {
+  background-color: #383838;
+  padding: 30px;
+  box-sizing: border-box;
+  text-align: center;
+  overflow: hidden;
+  width: 100%; /* Garante que ocupem toda a largura disponível */
+  height: 100%;
+}
+.footer{
+    height:50%;    
+}
+
+}

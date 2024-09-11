@@ -1,0 +1,673 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 225.9%;
+  overflow-x: hidden; /* Impede a rolagem horizontal */
+  overflow: visible;
+}
+
+.imagem1 {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  position: relative;
+  opacity: 90%;
+}
+
+.header-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  padding: 20px 20px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 30px;
+  margin-top: 10px;
+  z-index: 1;
+  transition: background-color 0.9s ease, padding 0.3s ease;
+}
+
+.header-content.scrolled {
+  padding: 10px 0; /* Reduz o padding quando o usuário rola a página */
+  background-color: #ffffff; /* Nova cor de fundo */
+  border-bottom: 2px solid #666;
+  top: 0;
+  margin-top: 0;
+  width: 100%;
+  border-radius: 0; /* Remove a borda arredondada */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); /* Sombra */
+}
+
+.logo {
+  height: 70px;
+  margin-right: 580px;
+}
+
+nav {
+  display: flex;
+  gap: 15px;
+}
+
+nav a {
+  color: #000000;
+  text-decoration: none;
+  margin-top: 15px;
+  font-size: 24px;
+  padding: 5px 15px;
+  transition: background-color 0.3s;
+}
+
+nav a:hover {
+  border-bottom: 4px solid #ff0000;
+}
+
+.imagem-com-texto {
+  position: relative;
+}
+
+.imagem1 {
+  filter: brightness(50%);
+}
+
+.texto-sobre-imagem {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  padding: 10px;
+  font-size: 24px;
+  text-align: center;
+}
+
+.p,
+.p2 {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+}
+
+.diferenciais {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+.index_card {
+  text-align: center;
+  width: 200px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.card_image {
+  width: 150px;
+  height: 131px;
+  margin-bottom: 10px;
+}
+
+.foto-texto {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #0056b3;
+}
+
+.foto {
+  width: 30%;
+  height: auto;
+  margin-right: 20px;
+  border-radius: 10px;
+}
+
+.texto-botao {
+  width: 70%;
+}
+
+.texto-botao h2 {
+  margin-top: 0;
+  color: #f9f9f9;
+}
+
+.texto-botao p {
+  margin: 10px 0;
+  color: #f9f9f9;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.carousel-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+  font-family: "Arial", sans-serif;
+}
+
+.product-carousel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+.product-slide {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.product {
+  display: none; /* Esconde todos os produtos inicialmente */
+  border-radius: 10px;
+  text-align: center;
+  width: 410px;
+  height: 365px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  margin: 0 auto; /* Centraliza o produto no contêiner pai */
+}
+
+.product img {
+  width: 100%; /* Ajusta a largura da imagem para ocupar 100% do contêiner */
+  height: 100%; /* Mantém a proporção da imagem */
+  align-items: center;
+  filter: brightness(110%);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin-bottom: 0;
+}
+
+.product p {
+  margin-top: 0; /* Remove a margem superior do parágrafo */
+  margin-bottom: 10px; /* Ajuste conforme necessário */
+  margin-left: -2px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #444;
+  text-align: center;
+  line-height: 1.5;
+  padding: 10px;
+  width: 96%; /* Ajusta a largura do parágrafo para 100% do contêiner */
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: "Arial", sans-serif;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+button {
+  margin: 0 112px; /* Adiciona espaço entre os botões */
+  padding: 12px 20px; /* Ajusta o tamanho do botão */
+  background-color: #007bff; /* Cor de fundo do botão */
+  color: #fff; /* Cor do texto */
+  border: none; /* Remove a borda padrão */
+  border-radius: 5px; /* Adiciona bordas arredondadas */
+  cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
+  font-size: 1rem; /* Tamanho da fonte */
+  font-family: "Arial", sans-serif; /* Fonte do texto */
+  transition: background-color 0.3s ease; /* Transição suave para a cor de fundo */
+}
+
+button:hover {
+  background-color: #0056b3; /* Cor de fundo ao passar o mouse */
+}
+
+button:focus {
+  outline: none; /* Remove o contorno padrão ao focar */
+}
+
+/* Remove a margem do último item para evitar espaço extra */
+.product:last-child {
+  margin-right: 0;
+}
+
+/* Estilo para a seção de contato */
+.contact-section {
+  background-color: #0623c7; /* Fundo azul */
+  color: #ffffff; /* Texto branco */
+  text-align: center; /* Centraliza o texto */
+  margin-top: 40px;
+  padding: 40px 20px; /* Adiciona espaçamento ao redor da seção */
+  margin-bottom: 40px;
+}
+
+.contact-section h2 {
+  margin-bottom: 20px; /* Espaço abaixo do título */
+  font-size: 1.8rem; /* Tamanho da fonte */
+  font-family: "Arial", sans-serif; /* Fonte do título */
+}
+
+/* Estilo para o botão do WhatsApp */
+.whatsapp-button {
+  display: inline-block; /* Exibe o botão como um bloco inline */
+  background-color: #25d366; /* Cor de fundo do botão do WhatsApp */
+  color: #ffffff; /* Cor do texto do botão */
+  padding: 10px 20px; /* Adiciona espaçamento interno ao botão */
+  text-decoration: none; /* Remove o sublinhado do link */
+  border-radius: 5px; /* Bordas arredondadas */
+  font-size: 1rem; /* Tamanho da fonte do botão */
+  font-family: "Arial", sans-serif; /* Fonte do botão */
+  transition: background-color 0.3s; /* Transição suave ao passar o mouse */
+}
+
+.whatsapp-button:hover {
+  background-color: #128c7e; /* Cor do botão ao passar o mouse */
+}
+
+/* Estilo para a seção do mapa e da ficha */
+.map-contact-container {
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: flex-start; /* Alinha ao topo verticalmente */
+  padding: 20px;
+}
+
+.map-container {
+  flex: 1; /* Faz o mapa ocupar metade da largura */
+  padding-right: 20px;
+}
+
+.contact-card {
+  flex: 1; /* Faz a ficha ocupar metade da largura */
+  background-color: #f8f9fa;
+  padding: 20px;
+  padding-bottom: 410px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.contact-card p {
+  margin: 5px 0;
+  font-size: 1rem;
+}
+
+.contact-card a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.contact-card a:hover {
+  text-decoration: underline;
+}
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 40px 20px;
+  margin-top: 83px; /* Espaço entre o conteúdo da página e o rodapé */
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 200px;
+  margin: 10px;
+}
+
+.footer-column h3 {
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+  color: #007bff;
+}
+
+.footer-column p {
+  margin: 0 0 10px;
+}
+
+.social-icons {
+  display: flex;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-icons img {
+  width: 32px;
+  height: 32px;
+  transition: transform 0.3s;
+}
+
+.social-icons img:hover {
+  transform: scale(1.1);
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  border-top: 1px solid #444;
+  padding-top: 10px;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+footer {
+  background-color: #f0f0f0;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.contato {
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.contato h2 {
+  font-size: 24px;
+  color: #333;
+}
+
+.contato ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.contato li {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.titd {
+  text-align: center;
+  margin-bottom: 20px;
+}
+/* Estilo base para telas grandes (desktop) */
+@media (min-width: 1201px) {
+  .header-content {
+    width: 80%;
+  }
+  .index_card {
+    width: 300px;
+  }
+  nav a {
+      margin-top: 10px;
+  }
+  .logo {
+    height: 55px;
+  }
+}
+
+/* Tablets em modo paisagem (telas médias) */
+@media (max-width: 1200px) and (min-width: 768px) {
+    body, html {
+    height: 100%;
+    overflow-x: hidden;
+  }
+  .header-content {
+    width: 90%; /* Ocupa 100% da largura para garantir que preencha a tela */
+    padding: 10px; /* Ajuste de padding */
+    position: fixed; /* Mantém o header fixo no topo */
+    top: 20px; /* Alinha o header no topo */
+    left: 50%; /* Garante que o header comece do canto esquerdo */
+    right: 0; /* Garante que o header se estenda até o canto direito */
+    margin: 0 auto; /* Centraliza o conteúdo dentro do header */
+    z-index: 10; /* Garante que o header fique acima de outros elementos */
+  }
+
+  .logo {
+    height: 70px; /* Ajusta o tamanho da logo */
+    margin-right: 230px; /* Logo à esquerda */
+  }
+
+  nav {
+    margin-left: auto; /* Menu de navegação à direita */
+  }
+
+  nav a {
+    font-size: 20px; /* Ajusta o tamanho da fonte no menu */
+  }
+  .map-contact-container {
+    display: flex;
+    justify-content: space-between; /* Garante que os dois elementos fiquem lado a lado */
+    align-items: flex-start; /* Alinha ao topo */
+    gap: 20px; /* Espaçamento entre o mapa e a ficha de contato */
+  }
+
+  .map-container {
+    flex: 1; /* Faz o mapa ocupar metade do espaço disponível */
+    height: 390px; /* Ajuste da altura do mapa */
+    padding-right: 0; /* Remove qualquer padding lateral */
+  }
+
+  .map-container iframe {
+    width: 100%; /* Garante que o iframe ocupe toda a largura do contêiner */
+    height: 100%; /* Garante que o iframe ocupe toda a altura */
+    border: none; /* Remove borda */
+  }
+
+  .contact-card {
+    flex: 1; /* Faz a ficha de contato ocupar o restante do espaço */
+    padding: 20px;
+    height: 350px; /* Altura igual à do mapa */
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+}
+
+/* Tablets em modo retrato e smartphones grandes (telas pequenas) */
+@media (max-width: 767px) {
+  .header-content {
+    width: 70%;
+    padding: 8px;
+  }
+  .index_card {
+    width: 100%;
+  }
+  .logo {
+    height: 60px;
+    margin-left: 20px;
+  }
+  nav a {
+    font-size: 18px;
+  }
+  .carousel-title {
+    font-size: 2rem;
+  }
+  
+}
+
+/* Smartphones (telas muito pequenas) */
+@media (max-width: 480px) {
+ body,
+  html {
+    margin: 0;
+    padding: 0;
+    height: 150%;
+    overflow: visible;
+    overflow-x: hidden;
+  }
+
+  .header-content {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .logo {
+    height: 40px;
+    margin-right: 0;
+  }
+
+  nav a {
+    font-size: 18px;
+    margin-top: 5px;
+    padding: 5px 10px;
+  }
+
+  .texto-sobre-imagem {
+    font-size: 10px;
+    margin-top: 10px;
+  }
+
+  .diferenciais {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .imagem1 {
+    height: 400px;
+  }
+
+  .index_card {
+    width: 100%;
+  }
+
+  .foto-texto {
+    flex-direction: column;
+  }
+
+  .foto {
+    width: 100%;
+    margin: 0 0 20px 0;
+  }
+
+  .texto-botao {
+    width: 100%;
+  }
+
+  .product {
+    width: 350px; /* Corrigido para incluir 'px' */
+    height:450px; /* Ajustado para height auto */
+    margin-bottom: 20px;
+    overflow: hidden;
+  }
+
+  .product img {
+    width: 100%;
+    height: 80%; /* Mantém a proporção da imagem */
+    margin-bottom: 0;
+  }
+
+  .product p {
+    font-size: 1rem; /* Ajusta o tamanho da fonte */
+    font-weight: bold; /* Define o peso da fonte como negrito */
+    margin-left: 2px;
+    color: #444; /* Define a cor do texto */
+    text-align: center; /* Centraliza o texto */
+    line-height: 1.5; /* Ajusta a altura da linha para melhorar a legibilidade */
+    padding: 10px; /* Adiciona um preenchimento ao redor do texto */
+    width: 93%; /* Ajusta a largura do parágrafo para 100% do contêiner */
+    background-color: #fff; /* Define a cor de fundo do parágrafo */
+    border: 1px solid #ccc; /* Adiciona uma borda ao redor do parágrafo */
+    border-radius: 5px; /* Adiciona bordas arredondadas */
+    font-family: "Arial", sans-serif; /* Define a fonte do texto */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra sutil ao redor do parágrafo */
+    display: block; /* Certifica-se de que o parágrafo é um bloco */
+  }
+
+  .product-slide {
+    flex-direction: column; /* Alinha os produtos verticalmente */
+    align-items: center; /* Centraliza os produtos */
+  }
+  button {
+    margin: 0 100px; /* Adiciona espaço entre os botões */
+    margin-top: 0px;
+  }
+  .map-container {
+    width: 20px;
+    display: none;
+  }
+
+  .contact-card {
+    padding-bottom: 20px;
+  }
+  .footer {
+    height: 590px;
+  }
+}
+
+@media (min-width: 1675px) {
+  body,
+  html {
+    height: 120%;
+  }
+  .logo {
+    margin-right: 800px;
+  }
+  nav a {
+    font-size: 22px;
+  }
+  button {
+    margin: 0 230px; /* Adiciona espaço entre os botões */
+  }
+  .texto-sobre-imagem {
+    font-size: 34px;
+  }
+  .product {
+    height: 600px;
+    width: 650px;
+  }
+  .product p {
+    width: 97%;
+  }
+  button {
+  margin: 0 112px; /* Adiciona espaço entre os botões */
+  }
+}
+
+
